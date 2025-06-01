@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "biomask-sdk"
+version = "0.1.0"
+description = "SDK for BioMask"
+authors = ["Aleksei Popov"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fabric-sdk-py = "^1.0.0"
+aioipfs = "^0.7.1"
+protobuf = "3.20.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

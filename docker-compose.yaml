@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ipfs:
+    image: ipfs/go-ipfs:latest
+    ports:
+      - "5001:5001"  # API порт
+      - "8080:8080"  # Gateway
+      - "4001:4001"  # Swarm (peer-to-peer)
+    volumes:
+      - ./ipfs-data:/data/ipfs
+    restart: unless-stopped
